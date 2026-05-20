@@ -1,6 +1,6 @@
 # License Status: Gasoline Price Effects On Traffic Safety In Urban And Rural Areas: Minnesota 1998–2007
 
-Generated: 2026-05-20 15:23:47 AEST
+Generated: 2026-05-20 15:32:54 AEST
 
 Recorded license/access note from the verified audit row: Publisher/repository terms visible; underlying compiled panel rights need confirmation before release.
 
