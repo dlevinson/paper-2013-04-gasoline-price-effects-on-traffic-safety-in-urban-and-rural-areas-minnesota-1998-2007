@@ -1,0 +1,6 @@
+source,package_path,decision,reason
+/Users/dlev2617/Documents/Papers/~05-Published/Safety Science/SafetyScience-GasPricesCrashesMN/TrafficSafety/MNcrashes.xls,data/originals/MNcrashes.xls,include_final_dataset,Workbook matches paper columns and reported mean adjusted gasoline price.
+/Users/dlev2617/Documents/Papers/~05-Published/Safety Science/SafetyScience-GasPricesCrashesMN/TrafficSafety/DataPreparation.pdf,documentation/DataPreparation.pdf,include_documentation,Prepared data source and variable documentation.
+/Users/dlev2617/Documents/Papers/~05-Published/Safety Science/SafetyScience-GasPricesCrashesMN/TrafficSafety/EconOfTranSafetyData.xls,not copied,exclude_nonfinal_variant,Same structure but gasprice_adj column differs and mean does not match paper-reported value.
+/Users/dlev2617/Documents/Papers/~05-Published/Safety Science/SafetyScience-GasPricesCrashesMN/TrafficSafety/Data description_Huang.doc,not copied,exclude_duplicate_documentation,Text substantially overlaps DataPreparation.pdf; PDF/txt documentation retained.
+/Users/dlev2617/Documents/Papers/~05-Published/Safety Science/SafetyScience-GasPricesCrashesMN/TrafficSafety/Gasoline prices and crashes in metro and nonmetro_updated paper proposal 061711.doc,not copied,exclude_nonarchival_draft,"Proposal/draft, not data or code."

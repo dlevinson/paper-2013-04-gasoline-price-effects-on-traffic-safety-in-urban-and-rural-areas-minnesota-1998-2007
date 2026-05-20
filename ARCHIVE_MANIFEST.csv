@@ -1,0 +1,13 @@
+row_id,package_path,decision,size_bytes
+paper-2013-04,ARCHIVE_MANIFEST.csv,include,53
+paper-2013-04,README.md,include,1352
+paper-2013-04,data/derived_exports/MNcrashes.csv,include_data,2026188
+paper-2013-04,data/originals/MNcrashes.xls,include_data,3540480
+paper-2013-04,documentation/ARCHIVE_BOUNDARY.md,include_documentation,791
+paper-2013-04,documentation/DataPreparation.pdf,include_documentation,80429
+paper-2013-04,documentation/DataPreparation.txt,include_documentation,5853
+paper-2013-04,metadata/MNcrashes_columns.csv,include_documentation,664
+paper-2013-04,metadata/MNcrashes_profile.csv,include_documentation,179
+paper-2013-04,metadata/SOURCE_FILE_DECISIONS.csv,include_documentation,1307
+paper-2013-04,paper/1-s2.0-S0925753513001276-main.pdf,include_paper_reference,596387
+paper-2013-04,paper/README.md,include_paper_reference,897

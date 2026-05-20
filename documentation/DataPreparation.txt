@@ -1,0 +1,171 @@
+Prepared by Arthur Huang on June 16, 2011.
+
+1
+
+Data preparation
+
+Eight major data sets are used in this research. The data preparation process is discussed
+as follows.
+
+1.1
+
+Crash data
+
+The crash data we examine are all vehicle-related crashes in Minnesota from 1998 to 2007.
+The data set, collected and compiled by the Minnesota Office of Traffic Safety (OTS), catalogues each crash’s time, date, location, and level of severity. In this paper we focus on the
+number of crashes at the county level for every month from 1998 to 2007.
+
+1.2
+
+Gasoline price
+
+Gasoline price data in Minnesota were downloaded from the website of the US Energy
+Information Administration 1 . The per-gallon prices are statewide company outlets prices
+by all gasoline sellers for every month from 1998-2007. In our model, we adjust each year’s
+gas price based on the inflation rate, where year 1998 is used as the base year.
+
+1.3
+
+Monthly VMT estimates by county
+
+VMT is an important variable to explain the variation of crashes on road. The Minnesota
+Department of Transportation compiled and reported the annual VMT by county from 1998
+to 2007 2 . This research nevertheless needs monthly VMT at the county level which calls for
+further estimation. In estimation we reference the hourly traffic volume data from 1998-2007
+collected by Automatic Traffic Recorder Stations (ATR) equipped on the state’s interstates,
+trunk highways, county state aid highways, and municipal state aid streets. The estimation
+procedure is as follows. The locations of ATR stations are first obtained in term of the
+counties they are in 3 .
+For a county that has at least one ATR station, the monthly traffic counts from the ATR
+station(s) in the county are calculated, based on which the ratio of traffic counts in each
+month to annual traffic counts is further computed. One important assumption to estimate
+monthly VMT is that the distribution of VMT by month in a county is the same as the
+distribution of the traffic counts by month in the county. Thus the ratio of traffic counts in
+each month to annual traffic counts is used as the ratio of VMT by month. Based on the
+annual VMT and the ratio of VMT by month, we can estimate the monthly VMT for the
+county.
+1
+
+Data source:
+US Energy Information Administration http://www.eia.gov/dnav/pet/hist/
+LeafHandler.ashx?n=PET&s=EMA_EPM0_PTC_SMN_DPG&f=M
+2
+Data source: http://www.dot.state.mn.us/roadway/data/reports/vmt.html
+3
+Some counties have multiple ATR stations, but some other counties do not have any ATR stations.
+
+1
+
+For a county that does not have any ATR stations, we calculate the state-wide monthly
+traffic count ratio based on the traffic counts from all stations and use the monthly traffic
+ratio as the monthly VMT ratio.
+
+1.4
+
+Alcohol assumption
+
+The alcohol consumption data are state-wide annual alcohol consumption from the Beer
+Institute.
+
+1.5
+
+Unemployment rate
+
+The unemployment data in Minnesota’s counties for each month from 1998-2007 are obtained
+from the Minnesota Department of Employment and Economic Development 4 .
+
+1.6
+
+Metro/non-Metro status
+
+Although the metro status for a county (a political distinction) is not directly available in
+Bureau of the Census’ classification scheme, the metro status for each county in Minnesota
+are decided based on the 2003 Metropolitan and Metropolitan Statistical Areas Cartographic
+Boundary Files 5 . These files documented the core-based statistical areas in the US marked as
+metropolitan or micropolitan. A metro area is defined as urbanized areas with a population
+of 50,000 or more; in comparison, a micropolitan area contains at least one urban cluster with
+a population between 10,000 and 50,000 6 . In Minnesota, there area are six metropolitan
+areas (Minneapolis-St. Paul, Fargo (ND-MN), La Crosse (ND-MN), Rochester, Grand Forks
+(ND-MN), St. Cloud) and 27 micropolitan areas.
+In this paper, if a county has at least one micropolitan area but not a single metro city,
+then the county is defined as micropolitan. If a county has at least one metropolitan area,
+it is defined as a metro. If a county does not have any micropolitan or metropolitan areas,
+the county is defined as rural.
+
+1.7
+
+Means of transportation
+
+The data of means of transportation for adults (over 16 years old) to work at the county
+are from the Census 2000. Such information for different counties in other years is not
+completely available, therefore we use Census 2000’s information for all years, by which we
+hope to examine the geographical differences in the means of transportation to work.
+
+2
+
+Explanation of the variables in the table
+4
+
+Data
+source:
+http://www.positivelyminnesota.com/apps/lmi/laus/detail.aspx?geog=
+2704000001&adjust=0&graph=1
+5
+Source: http://www.census.gov/geo/www/cob/mmsa2003.html
+6
+Source?http://www.census.gov/geo/www/cob/mmsa_meta.html
+
+2
+
+Table 1: Explanation of the variables
+Variable
+Explanation
+CountyID
+county ID (from 1 to 81)
+County name
+name of the county
+gasprice
+state-wide average outlets’ gasprice
+alcoholT otal
+state-wide yearly alcohol total consumption
+M etroStatus
+metro status (3 categories)
+M etroStatus adj
+metro status(2 categories)
+totalcrash
+monthly total crashes in a county
+monthlyV M T
+(estimated) monthly VMT in a county
+unemprate
+unemployment in a county in a month
+nonAutoRatio
+ratio of adults commuting by non-auto
+work at home Ratio
+ratio of adults working at home
+pubT ranRatio
+ratio of adults commuting by public transport
+W alkingRatio
+ratio of adults commuting by walking
+bikingRatio
+ratio of adults commuting by biking
+Inf lationrate
+US inflation rate by month
+CumulativeInf lateRate cumulative inflate rate
+gasprice adj
+adjusted gasoline price
+
+3
+
+Other info
+
+Unit: $/gallon
+0: rural; 1: metro; 2: micro
+0: rural. 1: metro or micro
+
+Unit: percentage
+
+using 1998 as the base
+
+gasprice/CumulativeInf lateRat
+
+
