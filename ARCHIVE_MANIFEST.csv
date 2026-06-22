@@ -1,6 +1,6 @@
 row_id,package_path,decision,size_bytes
 paper-2013-04,ARCHIVE_MANIFEST.csv,include,53
-paper-2013-04,README.md,include,1352
+paper-2013-04,README.md,include,2184
 paper-2013-04,data/derived_exports/MNcrashes.csv,include_data,2026188
 paper-2013-04,data/originals/MNcrashes.xls,include_data,3540480
 paper-2013-04,documentation/ARCHIVE_BOUNDARY.md,include_documentation,791
