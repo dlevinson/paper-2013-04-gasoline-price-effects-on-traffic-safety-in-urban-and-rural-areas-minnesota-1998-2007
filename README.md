@@ -1,5 +1,9 @@
 # Gasoline Price Effects On Traffic Safety In Urban And Rural Areas: Minnesota 1998-2007
 
+## Contribution
+
+This paper estimates how gasoline prices affect traffic safety after accounting for exposure, economic conditions, alcohol involvement, roadway characteristics, and population. Monthly Minnesota county models distinguish urban and rural responses and show how fuel-price changes alter crash outcomes through both travel demand and driving behavior.
+
 ## Bibliographic Information
 
 - Row ID: `paper-2013-04`
